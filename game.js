@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         escape: document.getElementById('escape-screen'),
         gameOver: document.getElementById('game-over-screen'),
         victory: document.getElementById('victory-screen'),
+        about: document.getElementById('about-screen'), // New: About Screen
     };
 
     // New: Technician elements
@@ -19,6 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         startGame: document.getElementById('start-game-btn'),
         howToPlay: document.getElementById('how-to-play-btn'),
         backToMenu: document.getElementById('back-to-menu-btn'),
+        about: document.getElementById('about-btn'), // New: About button
+        closeAbout: document.getElementById('close-about-btn'), // New: Close About button
         // nextDialogue: document.getElementById('next-dialogue-btn'), // This button will be removed
         pullCable: document.getElementById('pull-cable-btn'),
         retry: document.getElementById('retry-btn'),
@@ -128,6 +131,17 @@ document.addEventListener('DOMContentLoaded', () => {
     buttons.playAgain.addEventListener('click', () => {
         playSFX('button-click.wav');
         resetGame();
+        switchScreen('mainMenu');
+    });
+
+    // New: About button logic
+    buttons.about.addEventListener('click', () => {
+        playSFX('button-click.wav');
+        switchScreen('about');
+    });
+
+    buttons.closeAbout.addEventListener('click', () => {
+        playSFX('button-click.wav');
         switchScreen('mainMenu');
     });
 
