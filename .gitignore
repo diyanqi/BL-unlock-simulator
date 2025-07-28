@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Visual Studio Code
+.vscode/
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Logs
+*.log
+
+# Assets that might be generated or temporary
+._*

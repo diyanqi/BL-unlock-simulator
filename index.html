@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粗粮BL解锁模拟器</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.ico">
+</head>
+<body>
+    <div id="game-container">
+        <img id="main-menu-bg" class="background-image" src="assets/images/menu-background.png" alt="Main Menu Background">
+        <img id="game-play-bg" class="background-image" src="assets/images/game-background.png" alt="Game Play Background">
+        <div id="main-menu-overlay" class="overlay"></div>
+
+        <!-- Main Menu -->
+        <div id="main-menu" class="screen active">
+            <div class="title animated-title">粗粮BL解锁模拟器</div>
+            <div class="menu-buttons">
+                <button id="start-game-btn" class="ui-button">开始游戏</button>
+                <button id="how-to-play-btn" class="ui-button">玩法说明</button>
+                <button id="sound-toggle-btn" class="ui-button">音效: 开</button>
+            </div>
+            <div class="disclaimer">纯属娱乐，请勿在现实中模仿。</div>
+        </div>
+
+        <!-- How to Play Screen -->
+        <div id="how-to-play" class="screen">
+            <div class="how-to-play-content">
+                <h2>玩法说明</h2>
+                <p><strong>第一阶段：对话</strong><br>与刷机师傅进行对话。师傅会根据你的回答产生不同程度的红温。</p>
+                <p><strong>第二阶段：刷机</strong><br>密切关注手机屏幕。当 `system.img` 刷写完成后，在手机重启前点击“拔线快跑”按钮。时机就是一切！</p>
+                <p><strong>第三阶段：跑路</strong><br>使用方向键或WASD控制你的角色前往接应的电瓶车。躲避障碍物，别被师傅抓住了！</p>
+                <button id="back-to-menu-btn" class="ui-button">返回</button>
+            </div>
+        </div>
+
+        <!-- Dialogue Screen -->
+        <div id="dialogue-screen" class="screen">
+            <div id="technician">
+                <div id="technician-red-overlay"></div>
+            </div>
+            <div id="dialogue-box">
+                <p id="dialogue-text"></p>
+                <div id="dialogue-options"></div>
+            </div>
+        </div>
+
+        <!-- Flashing Screen -->
+        <div id="flashing-screen" class="screen">
+            <div id="phone-container">
+                <div id="phone-screen-ui">
+                    <div id="progress-bar-container">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <div id="flash-status"></div>
+                </div>
+            </div>
+            <button id="pull-cable-btn" class="ui-button">拔线快跑</button>
+        </div>
+
+        <!-- Escape Screen -->
+        <div id="escape-screen" class="screen">
+            <canvas id="escape-canvas"></canvas>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over-screen" class="screen">
+            <div class="game-over-content">
+                <h2 id="game-over-title">游戏结束</h2>
+                <p id="game-over-message"></p>
+                <button id="retry-btn" class="ui-button">再试一次</button>
+            </div>
+        </div>
+
+        <!-- Victory Screen -->
+        <div id="victory-screen" class="screen">
+            <div class="victory-content">
+                <h2>恭喜！</h2>
+                <p>你成功解锁了Bootloader并顺利逃脱！</p>
+                <div id="victory-animation"></div>
+                <button id="play-again-btn" class="ui-button">再玩一次</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

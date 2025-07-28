@@ -1,0 +1,22 @@
+
+# Image Generation Requirements for Xiaomi Unlock Simulator
+
+Please generate the following images with a consistent **Flat 2D cartoon style, vibrant colors, and clean, anime-inspired lines.** All images should be saved in PNG format with transparent backgrounds where appropriate.
+
+| Filename                  | Path                  | Suggested Size (WxH) | Generation Prompt                                                                                                                                                                                          |
+| :------------------------ | :-------------------- | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `menu-background.png`     | `assets/images/`      | 1920x1080            | A clean, modern Xiaomi store exterior view. Bright sunny day. Minimalist architecture with a large glass front and the orange "MI" logo. **Style: Flat 2D cartoon, vibrant colors, simple shapes, anime-inspired.** |
+| `game-background.png`     | `assets/images/`      | 1920x1080            | Interior of a modern electronics repair shop, view from the customer's perspective. A clean counter is in the foreground. In the background are shelves with phone boxes. **Style: Flat 2D cartoon, vibrant colors, anime-inspired.** |
+| `technician-character.png`| `assets/images/`      | 800x1200             | A friendly but slightly suspicious-looking male technician in a blue polo shirt with a small "MI" logo. He is sitting behind a counter. Full body, transparent background. **Style: Flat 2D cartoon character design, clean lines, anime style.** |
+| `phone-screen.png`        | `assets/images/`      | 600x1200             | A generic modern smartphone with a black screen, held by a cartoon hand. The phone should be the main focus, transparent background. **Style: Flat 2D cartoon, simple and clean.** |
+| `player-spritesheet.png`  | `assets/images/`      | 1024x1024            | A spritesheet for a young male character seen from a top-down perspective. Include animations for idle (standing still) and running in 8 directions. The character is wearing a hoodie and jeans. Transparent background. **Style: 2D top-down game sprite, pixel art or clean cartoon.** |
+| `technician-spritesheet.png`| `assets/images/`    | 1024x1024            | A spritesheet for the technician character seen from a top-down perspective. Include animations for idle and running in 8 directions. He is wearing his blue polo shirt. Transparent background. **Style: 2D top-down game sprite, pixel art or clean cartoon.** |
+| `obstacle-plant.png`      | `assets/images/`      | 128x128              | A square potted plant, top-down view. Transparent background. **Style: 2D top-down game asset, flat cartoon style.** |
+| `obstacle-bicycle.png`    | `assets/images/`      | 128x256              | A bicycle, top-down view. Transparent background. **Style: 2D top-down game asset, flat cartoon style.** |
+| `obstacle-ebike.png`      | `assets/images/`      | 128x256              | An electric scooter (e-bike), top-down view. Transparent background. **Style: 2D top-down game asset, flat cartoon style.** |
+| `target-ebike.png`        | `assets/images/`      | 200x300              | A cool-looking yellow electric scooter (e-bike), side view for the victory animation. Transparent background. **Style: Flat 2D cartoon, vibrant colors.** |
+| `ui-button-idle.png`      | `assets/images/`      | 400x150              | A clean, rectangular UI button with slightly rounded corners. Orange background, white border. No text. Transparent background. **Style: Flat UI design, minimalist, modern.** |
+| `ui-button-hover.png`     | `assets/images/`      | 400x150              | A clean, rectangular UI button with slightly rounded corners. Lighter orange background, white border. No text. Transparent background. **Style: Flat UI design, minimalist, modern.** |
+| `ui-arrow.png`            | `assets/images/`      | 100x100              | A simple, red, downward-pointing triangle arrow icon. Transparent background. **Style: Flat UI icon.** |
+
+Once you have generated these images and placed them in the `/Volumes/Data/xiaomi-unlock-simulator/assets/images/` directory, please let me know, and I will proceed with coding the game.
